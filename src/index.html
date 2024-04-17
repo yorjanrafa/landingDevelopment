@@ -12,36 +12,108 @@
       href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body class="bg-bunker-950">
-    <nav class="flex justify-evenly items-center p-6">
+    <nav class="flex flex-wrap justify-between md:justify-evenly items-center p-4">
       <h2 class="text-2xl font-bold font-protest-riot">
-        <span class="text-bunker-50">Tu web</span> <span class="text-bunker-300">Guanare</span>
+        <span class="text-bunker-50">Tu web</span>
+        <span class="text-bunker-300">Guanare</span>
       </h2>
 
-      <ul class="text-bunker-200 text-sm flex items-center gap-6">
-        <a href="#" class="bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full" >Inicio</a>
-        <a href="#">Acerca de nosotros</a>
-        <a href="#">Productos </a>
-        <a href="#">Contacto</a>  
-      </ul>
+      <div class="flex items-center">
+        <button
+          id="menu-toggle"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg
+            class="h-6 w-6 stroke-bunker-200"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
 
-      <button class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-xs">Contatanos</button>
+      <div class="slidemenu md:block w-full md:w-auto md:bg-bunker-950 bg-bunker-920 p-4 mt-4 md:mt-0 rounded-xl hidden 
+      " id="mobile-menu"
+      
+      
+      >
+        <ul class="text-bunker-200 text-sm flex flex-col md:flex-row items-start md:items-center md:pt-0 gap-4 md:gap-6">
+          <a href="#" class="bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full"
+          >Inicio</a
+          >
+          <a href="#">Acerca de nosotros</a>
+          <a href="#">Productos </a>
+          <a href="#"
+          class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-xs"
+          >Contactanos</a>
+        </ul>
+        
+    </div>
     </nav>
 
-    <header class="p-10 bg-bunker-920 mx-20 p-20 rounded-3xl flex">
+    <header
+      class="bg-bunker-920 mx-4 py-20 px-3 md:px-4 lg:px-10 rounded-3xl flex gap-8 flex-col lg:flex-row content-center items-center justify-center"
+    >
       <section>
-        <span class="bg-bunker-950 px-4 py-2 rounded-full text-bunker-50 text-xs ">Bienvenido</span>
-        <h1 class="text-5xl font-bold font-protest-riot text-bunker-50 my-5">Tu web Guanare</h1>
-        <p class="text-bunker-300 text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed iusto, praesentium saepe similique officiis explicabo, ipsa reiciendis excepturi expedita quis, velit voluptatibus autem architecto? Deleniti ab necessitatibus vero accusantium?</p>
-        <div class="pt-8">
-          <button class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-sm">Contactanos</button>
-          <button class="bg-bunker-950 text-bunker-50 font-bold px-4 py-3 rounded-full text-sm">Conocenos</button>
+        <span
+          class="bg-bunker-950 px-4 py-2 rounded-full text-bunker-50 text-xs text-center m-auto"
+          >Bienvenido</span
+        >
+        <h1
+          class="text-5xl font-bold font-protest-riot text-bunker-50 my-5 text-center lg:text-left"
+        >
+          Tu web Guanare
+        </h1>
+        <p
+          class="text-bunker-300 text-md text-center lg:text-left max-w-md m-auto"
+        >
+          Lorem ipsum dolor sit, praesentium saepe similique expedita quis,
+          velit voluptatibus autem architecto? Deleniti ab necessitatibus vero
+          accusantium?
+        </p>
+        <div class="pt-8 m-auto flex gap-2 justify-center lg:justify-start">
+          <button
+            class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-sm"
+          >
+            Contactanos
+          </button>
+          <button
+            class="bg-bunker-950 text-bunker-50 font-bold px-4 py-3 rounded-full text-sm"
+          >
+            Conocenos
+          </button>
         </div>
       </section>
-      <img src="./img/hero2.jpg" alt="" class="rounded-3xl max-w-[500px]" >
+      <div class="max-w-md lg:w-2/4 xl:max-w-[400px]">
+        <img
+          src="./img/hero2.jpg"
+          alt=""
+          class="rounded-xl lg:rounded-2xl w-full m-auto object-contain "
+        />
+      </div>
     </header>
 
     <footer></footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

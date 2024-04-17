@@ -1,0 +1,26 @@
+<button id="boton">Mostrar/Ocultar Contenedor</button>
+<div id="contenedor">
+  <p>Este es el contenido del contenedor.</p>
+  <p>Este es el contenido del contenedor.</p>
+  <p>Este es el contenido del contenedor.</p>
+</div>
+
+
+#contenedor {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  #contenedor.mostrar {
+    max-height: 500px; /* Ajusta este valor al alto máximo de tu contenido */
+  }
+
+
+
+  const boton = document.getElementById("boton");
+  const contenedor = document.getElementById("contenedor");
+  
+  boton.addEventListener("click", function() {
+    contenedor.classList.toggle("mostrar");
+  });
