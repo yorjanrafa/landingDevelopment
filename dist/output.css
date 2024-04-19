@@ -546,6 +546,34 @@ video {
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -568,10 +596,6 @@ video {
   margin-top: 1rem;
 }
 
-.box-content {
-  box-sizing: content-box;
-}
-
 .flex {
   display: flex;
 }
@@ -588,24 +612,8 @@ video {
   height: 1.5rem;
 }
 
-.h-0 {
-  height: 0px;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.max-h-0 {
-  max-height: 0px;
-}
-
-.max-h-full {
-  max-height: 100%;
+.h-screen {
+  height: 100vh;
 }
 
 .w-6 {
@@ -616,16 +624,28 @@ video {
   width: 100%;
 }
 
-.min-w-0 {
-  min-width: 0px;
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-md {
   max-width: 28rem;
 }
 
-.max-w-0 {
-  max-width: 0rem;
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down 1s both;
 }
 
 .flex-col {
@@ -640,10 +660,6 @@ video {
   align-content: center;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
@@ -656,20 +672,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-8 {
   gap: 2rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .rounded-3xl {
@@ -810,49 +822,34 @@ video {
   color: rgb(24 26 31 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.delay-150 {
-  transition-delay: 150ms;
+.delay-1000 {
+  transition-delay: 1000ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.ease-linear {
+  transition-timing-function: linear;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+.animate-delay-\[22ms\] {
+  animation-delay: 22ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
+.animate-normal {
+  animation-direction: normal;
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.animate-duration-\[400ms\] {
+  animation-duration: 400ms;
 }
 
-.hover\:-translate-y-1:hover {
-  --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.animate-once {
+  animation-iteration-count: 1;
 }
 
 .focus\:outline-none:focus {
@@ -867,6 +864,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -879,56 +880,16 @@ video {
     display: none;
   }
 
-  .md\:h-\[auto\] {
-    height: auto;
-  }
-
-  .md\:h-\[none\] {
-    height: none;
-  }
-
-  .md\:h-9 {
-    height: 2.25rem;
-  }
-
-  .md\:h-0 {
-    height: 0px;
-  }
-
   .md\:h-auto {
     height: auto;
-  }
-
-  .md\:max-h-none {
-    max-height: none;
-  }
-
-  .md\:max-h-60 {
-    max-height: 15rem;
-  }
-
-  .md\:max-h-0 {
-    max-height: 0px;
-  }
-
-  .md\:max-h-full {
-    max-height: 100%;
   }
 
   .md\:w-auto {
     width: auto;
   }
 
-  .md\:max-w-none {
-    max-width: none;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-evenly {
@@ -937,10 +898,6 @@ video {
 
   .md\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .md\:overflow-hidden {
-    overflow: hidden;
   }
 
   .md\:bg-bunker-950 {
@@ -955,6 +912,15 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:font-light {
+    font-weight: 300;
   }
 }
 
