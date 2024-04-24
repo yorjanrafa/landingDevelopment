@@ -12,9 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="bg-bunker-950">
-    <nav class="flex flex-wrap justify-between md:justify-evenly items-center p-4">
+    <nav
+      class="flex flex-wrap justify-between md:justify-evenly items-center p-6"
+    >
       <h2 class="text-2xl font-bold font-protest-riot">
         <span class="text-bunker-50">Tu web</span>
         <span class="text-bunker-300">Guanare</span>
@@ -45,49 +49,72 @@
       </div>
 
       <div
-        class="transition-all ease-linear delay-1000 md:block w-screen left-0 bottom-0 md:w-auto h-screen md:h-auto md:bg-bunker-950 bg-bunker-950 p-4 mt-4 md:mt-0 rounded-xl fixed md:static hidden z-10 justify-center items-center"
+
+        class="transition-all ease-linear delay-1000 hidden md:block left-0 bottom-0 w-screen md:w-auto h-screen md:h-auto md:bg-bunker-950 bg-bunker-950 mt-4 md:mt-0 rounded-xl fixed md:static z-10 flex justify-center items-center"
         id="mobile-menu"
       >
-        <ul class="text-bunker-200 text-md md:text-sm flex flex-col md:flex-row items-center md:pt-0 gap-10 md:gap-3 font-bold md:font-light">
-          <a href="#" class="bg-bunker-50/5 px-3 py-1 rounded-full font-semibold" button close-button>
-            Inicio
-          </a>
-          <a href="#" class="font-semibold px-3 py-1 rounded-full hover:bg-bunker-50/5 duration-200">Acerca de nosotros</a>
-          <a href="#" class="font-semibold px-3 py-1 rounded-full hover:bg-bunker-50/5 duration-200">Productos </a>
-          <a href="#" class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-xs">Contactanos</a
+        <ul
+          class="text-bunker-200 text-md md:text-sm flex flex-col md:flex-row items-center md:pt-0 gap-10 md:gap-6 font-bold md:font-light"
+        >
+          <a
+            href="#"
+            class="bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full"
+            button
+            close-button
+            >Inicio</a
+          >
+          <a href="#">Acerca de nosotros</a>
+          <a href="#">Productos </a>
+          <a
+            href="#"
+            class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-xs"
+            >Contactanos</a
           >
         </ul>
       </div>
     </nav>
 
-    <header class="bg-bunker-920 mx-4 py-20 px-3 md:px-4 lg:px-10 rounded-3xl flex gap-8 flex-col lg:flex-row content-center items-center justify-center">
-      <section>
-        <span class="bg-bunker-950 px-4 py-2 rounded-full text-bunker-50 text-xs text-center m-auto">
-          Bienvenido
-        </span>
-        <h1 class="text-5xl font-bold font-protest-riot text-bunker-50 my-5 text-center lg:text-left">
-          Tu web Guanare
-        </h1>
-        <p class="text-bunker-300 text-md text-center lg:text-left max-w-md m-auto">
-          Lorem ipsum dolor sit, praesentium saepe similique expedita quis,
-          velit voluptatibus autem architecto? Deleniti ab necessitatibus vero
-          accusantium?
-        </p>
-        <div class="pt-8 m-auto flex gap-2 justify-center lg:justify-start">
-          <button class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-sm">
-            Contactanos
-          </button>
-          <button class="bg-bunker-950 text-bunker-50 font-bold px-4 py-3 rounded-full text-sm">
-            Conocenos
-          </button>
+    <header class="flex justify-center">
+      <div
+        class="bg-bunker-920 mx-4 py-20 px-3 md:px-4 lg:px-10 rounded-3xl flex gap-8 flex-col lg:flex-row content-center items-center justify-center w-full max-w-[1200px] "
+      >
+        <section>
+          <span
+            class="bg-bunker-950 px-4 py-2 rounded-full text-bunker-50 text-xs text-center m-auto"
+            >Bienvenido</span
+          >
+          <h1
+            class="text-5xl font-bold font-protest-riot text-bunker-50 my-5 text-center lg:text-left"
+          >
+            Tu web Guanare
+          </h1>
+          <p
+            class="text-bunker-300 text-md text-center lg:text-left max-w-md m-auto"
+          >
+            Lorem ipsum dolor sit, praesentium saepe similique expedita quis,
+            velit voluptatibus autem architecto? Deleniti ab necessitatibus vero
+            accusantium?
+          </p>
+          <div class="pt-8 m-auto flex gap-2 justify-center lg:justify-start">
+            <button
+              class="bg-bunker-50 text-bunker-950 font-bold px-4 py-3 rounded-full text-sm"
+            >
+              Contactanos
+            </button>
+            <button
+              class="bg-bunker-950 text-bunker-50 font-bold px-4 py-3 rounded-full text-sm"
+            >
+              Conocenos
+            </button>
+          </div>
+        </section>
+        <div class="max-w-md lg:w-2/4 xl:max-w-[400px]">
+          <img
+            src="./img/hero2.jpg"
+            alt=""
+            class="rounded-xl lg:rounded-2xl w-full m-auto object-contain"
+          />
         </div>
-      </section>
-      <div class="max-w-md lg:w-2/4 xl:max-w-[400px]">
-        <img
-          src="./img/hero2.jpg"
-          alt=""
-          class="rounded-xl lg:rounded-2xl w-full m-auto object-contain"
-        />
       </div>
     </header>
     <main>
@@ -137,6 +164,7 @@
             </a>
           </div>
       </section>
+
 
       <section class="mx-auto bg-bunker max-w-7xl w-full pt-16 flex justify-center items-center flex-col">
         <div class="max-w-xl flex justify-center items-center flex-col xs:text-center xl:max-w-3xl">
@@ -252,7 +280,142 @@
           </div>
         </div>
       </section>
-    </main>
+ 
+
+    <section class="p-24 flex flex-col">
+      <span class="bg-bunker-920 px-4 py-2 rounded-full text-bunker-50 text-xs text-center m-auto">¿Qué hacemos?</span>
+      <h2 class="text-bunker-50 font-protest-riot text-4xl text-center pt-6 pb-10">
+        Creamos productos digitales <br> para impulsarte a ti y a tu negocio
+      </h2>
+
+      <article class="flex flex-nowrap max-h-[600px] max-w-[1200px] m-auto">
+        <div class="h-auto  flex flex-col items-end justify-evenly gap-4 p-6 w-1/2">
+          <div class="bg-bunker-920 rounded-2xl py-4 px-10 flex text-bunker-50 max-w-[100%] gap-4 ml-10">
+            <div class="  bg-bunker-950 h-fit w-fit py-3 rounded-xl">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="8" y="8" width="8" height="8" rx="1"></rect>
+              <line x1="3" y1="8" x2="4" y2="8"></line>
+              <line x1="3" y1="16" x2="4" y2="16"></line>
+              <line x1="8" y1="3" x2="8" y2="4"></line>
+              <line x1="16" y1="3" x2="16" y2="4"></line>
+              <line x1="20" y1="8" x2="21" y2="8"></line>
+              <line x1="20" y1="16" x2="21" y2="16"></line>
+              <line x1="8" y1="20" x2="8" y2="21"></line>
+              <line x1="16" y1="20" x2="16" y2="21"></line>
+            </svg>
+            </div>
+            <article>
+              <h3 class="">Diseño web</h3>
+              <p class="text-sm text-bunker-300">
+                Laboriosam eos dolor, no 
+                Asperiores quidem molestiae numquam autem.
+              </p>
+            </article>
+          </div>
+          <div class="bg-bunker-920 rounded-2xl py-4  px-8 mr-10 flex text-bunker-50 max-w-[100%] gap-6">
+            <div class="  bg-bunker-950 h-fit w-fit py-3 rounded-xl">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="8" y="8" width="8" height="8" rx="1"></rect>
+              <line x1="3" y1="8" x2="4" y2="8"></line>
+              <line x1="3" y1="16" x2="4" y2="16"></line>
+              <line x1="8" y1="3" x2="8" y2="4"></line>
+              <line x1="16" y1="3" x2="16" y2="4"></line>
+              <line x1="20" y1="8" x2="21" y2="8"></line>
+              <line x1="20" y1="16" x2="21" y2="16"></line>
+              <line x1="8" y1="20" x2="8" y2="21"></line>
+              <line x1="16" y1="20" x2="16" y2="21"></line>
+            </svg>
+            </div>
+            <article>
+              <h3>Diseño web</h3>
+              <p>
+                Laboriosam eos dolor, non blanditiis neque ipsum culpa et illo
+                Asperiores quidem 
+              </p>
+            </article>
+          </div>
+          <div class="bg-bunker-920 rounded-2xl py-4 px-8 flex text-bunker-50 max-w-[100%] ml-10 gap-6">
+            <div class="  bg-bunker-950 h-fit w-fit py-3 rounded-xl">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="8" y="8" width="8" height="8" rx="1"></rect>
+              <line x1="3" y1="8" x2="4" y2="8"></line>
+              <line x1="3" y1="16" x2="4" y2="16"></line>
+              <line x1="8" y1="3" x2="8" y2="4"></line>
+              <line x1="16" y1="3" x2="16" y2="4"></line>
+              <line x1="20" y1="8" x2="21" y2="8"></line>
+              <line x1="20" y1="16" x2="21" y2="16"></line>
+              <line x1="8" y1="20" x2="8" y2="21"></line>
+              <line x1="16" y1="20" x2="16" y2="21"></line>
+            </svg>
+            </div>
+            <article>
+              <h3>Diseño web</h3>
+              <p>
+                Laboriosam eos dolor, non blanditiis neque ipsum culpa et illo
+                Asperiores
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 w-1/2">
+          <img
+            src="./img/que_hacemos/what-we-do-image-01.webp"
+            alt=""
+            class="row-span-2 h-full w-full rounded-xl object-cover"
+          />
+          <img
+            src="./img/que_hacemos/what-we-do-image-02.webp"
+            alt=""
+            class="row-span-1 h-full w-full rounded-xl object-cover"
+          />
+          <img
+            src="./img/que_hacemos/what-we-do-image-03.webp"
+              alt=""
+            class="row-span-1 h-full w-full rounded-xl object-cover"
+          />
+        </div>
+      </article>
+    </section>
+
     <footer></footer>
     <script>
       const menuToggle = document.getElementById("menu-toggle");
