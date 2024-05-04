@@ -1,3 +1,4 @@
 {
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "liveServer.settings.port": 5501
 }
