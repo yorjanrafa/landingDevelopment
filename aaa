@@ -1,7 +1,7 @@
 <button id="boton">Mostrar/Ocultar Contenedor</button>
 <div id="contenedor">
   <p>Este es el contenido del contenedor.</p>
-  <p>Este es el contenido del contenedor.</p>
+  <p>Este es el contenido del contenedor</p>
   <p>Este es el contenido del contenedor.</p>
 </div>
 
